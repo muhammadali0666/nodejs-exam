@@ -1,9 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const uuid = require("uuid");
-const { read_file, write_file } = require("./fs/fs_api");
 const Router = require("./routes/product_routes")
+const AutRouter = require("./routes/auth_router")
 
 dotenv.config();
 const { PORT } = process.env || 4000;
@@ -14,6 +13,9 @@ app.use(express.json());
 
 /////////////////// ROUTER
 app.use(Router)
+
+////////////////// Auth
+app.use(AutRouter)
 
 
 app.listen(PORT, () => {
