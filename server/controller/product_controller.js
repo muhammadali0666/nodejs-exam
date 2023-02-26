@@ -8,7 +8,7 @@ const products = {
   },
   POST: (req, res) => {
     try {
-      console.log(req.body);
+      console.log(req.headers);
       let products = read_file("products.json");
 
       products.push({
