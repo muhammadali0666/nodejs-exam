@@ -1,18 +1,21 @@
 const { read_file, write_file } = require("../fs/fs_api");
 const uuid = require("uuid");
 const jwt = require("jsonwebtoken");
+let userData = read_file("jwt.json")
 
 const products = {
   GET: (req, res) => {
 
-    const {id} = req.user
+    let {id} = userData[0]
+
+    // const {id} = req.user
     let products = read_file("products.json").filter(user => user.user_id === id)
     res.status(200).send(products);
   },
   POST: async (req, res) => {
     try {
-
-      let {id} = req.user
+      let {id} = userData[0]
+      // let {id} = req.user
 
         let products = read_file("products.json");
 

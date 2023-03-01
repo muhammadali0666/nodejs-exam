@@ -4,7 +4,8 @@ const dotenv = require("dotenv");
 const Router = require("./routes/product_routes")
 const AutRouter = require("./routes/auth_router")
 const session = require("express-session")
-// const AuthMiddle = require("./middleware/auth_middleware")
+const AuthMiddle = require("./middleware/auth_middleware")
+const Allrouter = require("./routes/all_products")
 
 dotenv.config();
 const { PORT } = process.env || 4000;
@@ -18,13 +19,17 @@ app.use(session({
   saveUninitialized: false
 }))
 
+////////////////// MiddleWare
+// app.use(AuthMiddle)
+
 /////////////////// ROUTER
 app.use(Router)
 
 ////////////////// Auth
 app.use(AutRouter)
 
-////////////////// MiddleWare
+///////////////// AllProducts
+app.use(Allrouter)
 
 
 
