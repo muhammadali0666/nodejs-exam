@@ -1,7 +1,12 @@
 [
     {
-        "id": "9cf973b6-de24-4b03-9a8e-b8b9ba96397a",
-        "email": "a@gmail.com",
-        "password": "$2a$12$/H6WUWeoouMT2ikH./sgTOYuGsGDiBLhx12Y6Q6TfBbFU.Ld7lDxe"
+        "id": "c91bb9f3-0aad-4cab-b219-3cd4c4ace37b",
+        "email": "ali@gmail.com",
+        "password": "$2a$12$5jy8p00oIIINz8YG7UDm5eGdIniYz0u9pBWRQbDBA3cAeV7B2TQ4e"
+    },
+    {
+        "id": "ba763777-fef5-441b-9bd2-45ba99410f92",
+        "email": "abduvali@gmail.com",
+        "password": "$2a$12$hGciGG.q0E5.JdwomShSqe7X0RR6lHZJyiIN4v6GS63sz0xS479lW"
     }
 ]

@@ -52,7 +52,7 @@ const Auth = {
         { id: founded.id, email: founded.email },
         process.env.SEKRET_KEY,
         {
-          expiresIn: "1h",
+          expiresIn: "5h",
         }
       );
 
