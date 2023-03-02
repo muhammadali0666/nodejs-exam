@@ -1,11 +1,11 @@
 const { read_file } = require("../fs/fs_api");
 
 
-const Allproducts = {
+const Allcourses = {
   GET: (req, res) => {
-    let products = read_file("products.json")
-    res.status(200).send(products);
+    let courses = read_file("courses.json")
+    res.status(200).send(courses);
   }
 };
 
-module.exports = Allproducts;
+module.exports = Allcourses;

@@ -1,20 +1,16 @@
-const jwt = require("jsonwebtoken")
-const {read_file, write_file} = require("../fs/fs_api")
+const jwt = require("jsonwebtoken");
+const { read_file, write_file } = require("../fs/fs_api");
 
-module.exports = async function(req, res, next) {
-  
-  let userData = await jwt.verify(req.headers.token, process.env.SEKRET_KEY)
+module.exports = async function (req, res, next) {
+  let userData = await jwt.verify(req.headers.token, process.env.SEKRET_KEY);
 
-  let reader = read_file("jwt.json")
+  let reader = read_file("jwt.json");
 
-  // reader.push(userData)
-  reader[0] = userData
+  reader[0] = userData;
 
   console.log(reader);
 
-  write_file("jwt.json", reader)
+  write_file("jwt.json", reader);
 
-  // req.user = userData
-
-  next()
-}
+  next();
+};

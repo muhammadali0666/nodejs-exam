@@ -8,5 +8,10 @@
         "id": "7097c5d0-e61a-49c2-b3b4-2ba7f9dd655b",
         "email": "ali@gmail.com",
         "password": "$2a$12$gciBiefhJkGcB1rUXv9v3Of.EWM1xqlFb5wH/fUo3jq/v6VAMqADK"
+    },
+    {
+        "id": "3e280c4f-e6a0-49be-a629-13c20a90582b",
+        "email": "Muhammadali@gmail.com",
+        "password": "$2a$12$0raYmzadySzFG8i20QJCc.LEmG74/7gwjXDXjCPhU3uOO5Cfq6SM6"
     }
 ]
