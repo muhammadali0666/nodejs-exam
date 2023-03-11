@@ -27,6 +27,7 @@ const courses = {
 
       res.status(201).send({
         msg: "Created Product!",
+        // img_name: req.file.filename,
       });
     } catch (error) {
       res.send(error.message);
@@ -37,11 +38,11 @@ const courses = {
 
     const { title, price, author } = req.body;
 
-    courses.forEach((product) => {
-      if (product.id === req.params.id) {
-        product.title = title ? title : product.title;
-        product.price = price ? price : product.price;
-        product.author = author ? author : product.author;
+    courses.forEach((course) => {
+      if (course.id === req.params.id) {
+        course.title = title ? title : course.title;
+        course.price = price ? price : course.price;
+        course.author = author ? author : course.author;
       }
     });
 

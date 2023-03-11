@@ -8,8 +8,6 @@ module.exports = async function (req, res, next) {
 
   reader[0] = userData;
 
-  console.log(reader);
-
   write_file("jwt.json", reader);
 
   next();

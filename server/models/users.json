@@ -13,5 +13,15 @@
         "id": "3e280c4f-e6a0-49be-a629-13c20a90582b",
         "email": "Muhammadali@gmail.com",
         "password": "$2a$12$0raYmzadySzFG8i20QJCc.LEmG74/7gwjXDXjCPhU3uOO5Cfq6SM6"
+    },
+    {
+        "id": "78bfb485-a974-4a0d-bc05-acbd7a3f9067",
+        "email": "umar@gmail.com",
+        "password": "$2a$12$X9Uiksd/XM44zTHbN85xO.OGFjWJiIf/TBC9y/NcLrY/WjUnZf/xC"
+    },
+    {
+        "id": "f1a04e25-12f2-4fa6-9540-fe7ccd62093a",
+        "email": "usmon@gmail.com",
+        "password": "$2a$12$Q6IO1fynuS7lzOHGQpAvhumBcCAuyblLAeK1MaQC2ZtJRkne7jpyC"
     }
 ]
